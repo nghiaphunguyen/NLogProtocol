@@ -14,19 +14,19 @@ public var NKLOG: NLogProtocol.Type = NKLogEmpty.self
 public struct NKLogEmpty: NLogProtocol {}
 
 public protocol NLogProtocol {
-    static func debug(message: String, _ tag: String, color: UIColor?, file: String, function: String, line: Int)
+    static func debug(_ message: String, _ tag: String, color: UIColor?, file: String, function: String, line: Int)
     
-    static func info(message: String, _ tag: String, color: UIColor?, file: String, function: String, line: Int)
+    static func info(_ message: String, _ tag: String, color: UIColor?, file: String, function: String, line: Int)
     
-    static func server(message: String, _ tag: String, color: UIColor?, file: String, function: String, line: Int)
+    static func server(_ message: String, _ tag: String, color: UIColor?, file: String, function: String, line: Int)
     
-    static func warning(message: String, _ tag: String, color: UIColor?, file: String, function: String, line: Int)
+    static func warning(_ message: String, _ tag: String, color: UIColor?, file: String, function: String, line: Int)
     
-    static func error(message: String, _ tag: String, color: UIColor?, file: String, function: String, line: Int)
+    static func error(_ message: String, _ tag: String, color: UIColor?, file: String, function: String, line: Int)
 }
 
 public extension NLogProtocol {
-    public static func debug(message: String,
+    public static func debug(_ message: String,
                       _ tag: String = "",
                         color: UIColor? = nil,
                         file: String = #file,
@@ -34,7 +34,7 @@ public extension NLogProtocol {
                         line: Int = #line) {
     }
     
-    public static func info(message: String,
+    public static func info(_ message: String,
                      _ tag: String = "",
                        color: UIColor? = nil,
                        file: String = #file,
@@ -42,7 +42,7 @@ public extension NLogProtocol {
                        line: Int = #line) {
     }
     
-    public static func server(message: String,
+    public static func server(_ message: String,
                        _ tag: String = "",
                          color: UIColor? = nil,
                          file: String = #file,
@@ -50,7 +50,7 @@ public extension NLogProtocol {
                          line: Int = #line) {
     }
     
-    public static func warning(message: String,
+    public static func warning(_ message: String,
                         _ tag: String = "",
                           color: UIColor? = nil,
                           file: String = #file,
@@ -58,7 +58,7 @@ public extension NLogProtocol {
                           line: Int = #line) {
     }
     
-    public static func error(message: String,
+    public static func error(_ message: String,
                       _ tag: String = "",
                         color: UIColor? = nil,
                         file: String = #file,
