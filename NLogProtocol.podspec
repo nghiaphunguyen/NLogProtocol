@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "NLogProtocol"
-  s.version      = "1.0.0"
+  s.version      = "2.0.0"
   s.summary      = "NLogProtocol"
   s.homepage     = "http://knacker.com"
   s.license      = "MIT"
