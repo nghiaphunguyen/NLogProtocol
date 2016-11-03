@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		183F9B241DC5CE7600D9C7B9 /* NLogProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183F9B231DC5CE7600D9C7B9 /* NLogProtocol.swift */; };
+		183F9B241DC5CE7600D9C7B9 /* NKLogProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183F9B231DC5CE7600D9C7B9 /* NKLogProtocol.swift */; };
 		1860261D1DBF2DB800014635 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1860261C1DBF2DB800014635 /* AppDelegate.swift */; };
 		1860261F1DBF2DB800014635 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1860261E1DBF2DB800014635 /* ViewController.swift */; };
 		186026221DBF2DB800014635 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 186026201DBF2DB800014635 /* Main.storyboard */; };
@@ -15,6 +15,7 @@
 		186026271DBF2DB800014635 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 186026251DBF2DB800014635 /* LaunchScreen.storyboard */; };
 		186026321DBF2DB800014635 /* NLogProtocolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186026311DBF2DB800014635 /* NLogProtocolTests.swift */; };
 		1860263D1DBF2DB800014635 /* NLogProtocolUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1860263C1DBF2DB800014635 /* NLogProtocolUITests.swift */; };
+		187674851DCAFE8000BE089E /* NKLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187674841DCAFE8000BE089E /* NKLog.swift */; };
 		721A3198F4659AED6C27F8E7 /* Pods_NLogProtocol.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C55924BC32F683CC853868DA /* Pods_NLogProtocol.framework */; };
 		9C99742EBC0A06EC5F3A4DF5 /* Pods_NLogProtocolUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD663D0B63A691801FEADE2E /* Pods_NLogProtocolUITests.framework */; };
 		AC1556FF1F06BB86025478CC /* Pods_NLogProtocolTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42DE656D5485F7927A6CF45A /* Pods_NLogProtocolTests.framework */; };
@@ -38,7 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		183F9B231DC5CE7600D9C7B9 /* NLogProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NLogProtocol.swift; sourceTree = "<group>"; };
+		183F9B231DC5CE7600D9C7B9 /* NKLogProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NKLogProtocol.swift; sourceTree = "<group>"; };
 		186026191DBF2DB800014635 /* NLogProtocol.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NLogProtocol.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1860261C1DBF2DB800014635 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1860261E1DBF2DB800014635 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -52,6 +53,7 @@
 		186026381DBF2DB800014635 /* NLogProtocolUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NLogProtocolUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1860263C1DBF2DB800014635 /* NLogProtocolUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NLogProtocolUITests.swift; sourceTree = "<group>"; };
 		1860263E1DBF2DB800014635 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		187674841DCAFE8000BE089E /* NKLog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NKLog.swift; sourceTree = "<group>"; };
 		1E695F947FB92642C5976CEB /* Pods-NLogProtocolTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NLogProtocolTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NLogProtocolTests/Pods-NLogProtocolTests.debug.xcconfig"; sourceTree = "<group>"; };
 		346AAE30F9FF6AC805319E99 /* Pods-NLogProtocolUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NLogProtocolUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NLogProtocolUITests/Pods-NLogProtocolUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		357A06F0289A2052DBBF1012 /* Pods-NLogProtocol.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NLogProtocol.release.xcconfig"; path = "Pods/Target Support Files/Pods-NLogProtocol/Pods-NLogProtocol.release.xcconfig"; sourceTree = "<group>"; };
@@ -161,7 +163,8 @@
 		1860264A1DBF36D400014635 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				183F9B231DC5CE7600D9C7B9 /* NLogProtocol.swift */,
+				183F9B231DC5CE7600D9C7B9 /* NKLogProtocol.swift */,
+				187674841DCAFE8000BE089E /* NKLog.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -461,8 +464,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				1860261F1DBF2DB800014635 /* ViewController.swift in Sources */,
+				187674851DCAFE8000BE089E /* NKLog.swift in Sources */,
 				1860261D1DBF2DB800014635 /* AppDelegate.swift in Sources */,
-				183F9B241DC5CE7600D9C7B9 /* NLogProtocol.swift in Sources */,
+				183F9B241DC5CE7600D9C7B9 /* NKLogProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
